@@ -1,0 +1,26 @@
+defaults:
+    - tsmnet
+    - _self_
+name: TSMNet+LieBN
+model:
+    bnorm: LieBN
+    bnorm_dispersion: SCALAR
+    metric: AIM
+    theta: 1.0
+    alpha: 1.0
+    beta: 0.0
+scheduler:
+    _target_: spdnets.Liebatchnorm.MomentumBatchNormScheduler
+    epochs: ${sub:${fit.epochs},10}
+    bs: ${rdiv:${fit.batch_size_train},${fit.domains_per_batch}}
+    bs0: ${fit.batch_size_train}
+    tau0: 0.85
+
+optimizer:
+    param_groups:
+        - 
+            - 'spd*.mean'
+            - weight_decay: 0
+        -       
+            - 'spdnet.*.W'
+            - weight_decay: 0      

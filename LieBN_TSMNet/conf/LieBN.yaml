@@ -1,0 +1,43 @@
+defaults:
+  - _self_
+  - dataset: hinss2021
+  - evaluation: inter-session+uda
+  - preprocessing: bb4-36Hz
+  - nnet: tsmnet_spddsmbn
+  - override hydra/launcher: joblib
+fit:
+  stratified: True
+  epochs: 50
+  batch_size_train: 50
+  domains_per_batch: 5
+  batch_size_test: -1
+  validation_size: 0.2 #0.1 # float <1 for fraction; int for specific number
+  test_size: 0.05 # percent of groups/domains used for testing
+
+saving_model:
+  is_save_model: False
+  is_save_results_each_fold: True
+
+score: balanced_accuracy # sklearn scores
+device: GPU
+threadnum: 1
+data_dir: /data
+is_debug: False
+seed: 42
+is_timing: False
+
+hydra:
+  run:
+    dir: outputs/${dataset.name}/${evaluation.strategy}
+  sweep:
+    dir: outputs/${dataset.name}/${evaluation.strategy}
+    subdir: '.'
+  launcher:
+    n_jobs: -1
+  job_logging:
+    handlers:
+      file:
+        class: logging.FileHandler
+        filename: default.log
+#  job:
+#    num_threads: 2

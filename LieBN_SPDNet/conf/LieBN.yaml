@@ -1,0 +1,27 @@
+defaults:
+  - _self_
+  - nnet: SPDNetLieBN # SPDNet SPDNetLieBN SPDNetBN
+  - dataset: RADAR # HDM05, RADAR, FPHA
+  - override hydra/launcher: joblib
+fit:
+  epochs: 200
+  batch_size: 30
+  threadnum: 1
+  is_writer: True
+  cycle: 1
+  seed: 1024
+  is_save: True
+
+hydra:
+  run:
+    dir: ./outputs/${dataset.name}
+  sweep:
+    dir: ./outputs/${dataset.name}
+    subdir: '.'
+  launcher:
+    n_jobs: -1
+  job_logging:
+    handlers:
+      file:
+        class: logging.FileHandler
+        filename: default.log

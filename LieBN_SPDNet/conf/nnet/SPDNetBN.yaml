@@ -1,0 +1,7 @@
+defaults:
+    - SPDNet
+    - _self_
+model:
+    model_type: SPDNetBN
+    BN_type: brooks
+    momentum: 0.1

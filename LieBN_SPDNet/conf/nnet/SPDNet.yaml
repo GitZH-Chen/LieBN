@@ -1,0 +1,6 @@
+model:
+    model_type: SPDNet
+optimizer:
+    mode: AMSGRAD
+    lr: 5e-3
+    weight_decay: 0.

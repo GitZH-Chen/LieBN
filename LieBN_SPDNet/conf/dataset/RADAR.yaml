@@ -1,0 +1,3 @@
+name: RADAR
+architecture: [20,16,12]
+path: /data #change this to your data folder

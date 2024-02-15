@@ -1,0 +1,10 @@
+defaults:
+    - SPDNetBN
+    - _self_
+model:
+    model_type: SPDNetLieBN
+    BN_type: LieBN
+    metric: AIM # AIM,LEM,LCM
+    theta: 1.0
+    alpha: 1.0
+    beta: 0.0
