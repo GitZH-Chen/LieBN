@@ -61,7 +61,7 @@ The [Hinss2021](https://doi.org/10.5281/zenodo.5055046) dataset is publicly avai
 
 ### Running experiments
 
-To run all the experiments on the Radar and HDM05 datasets, go to the folder `LieBN_SPDNet` and run this command:
+To run all the experiments on the Radar and HDM05 datasets, go to the folder `LieBN_TSMNet` and run this command:
 
 ```train
 bash run_experiments.sh
