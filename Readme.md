@@ -10,8 +10,7 @@ This is the official code for our ICLR 2024 publication: *A Lie Group Approach t
 If you find this project helpful, please consider citing us as follows:
 
 ```bib
-@inproceedings{
-chen2024a,
+@inproceedings{chen2024liebn,
 title={A Lie Group Approach to Riemannian Batch Normalization},
 author={Ziheng Chen and Yue Song and Yunmei Liu and Nicu Sebe},
 booktitle={The Twelfth International Conference on Learning Representations},
