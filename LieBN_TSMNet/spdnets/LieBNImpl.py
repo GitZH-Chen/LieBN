@@ -140,7 +140,7 @@ class SPDLieBatchNormImpl(BaseBatchNorm):
             X_deformed = self.spd_power(X)
         elif self.metric == 'LEM':
             X_deformed = functionals.sym_logm.apply(X)
-        elif self.metric == 'LCM' or self.metric=='AIM':
+        elif self.metric == 'LCM':
             X_power = self.spd_power(X)
             L = th.linalg.cholesky(X_power)
             diag_part = th.diag_embed(th.log(th.diagonal(L, dim1=-2, dim2=-1)))
