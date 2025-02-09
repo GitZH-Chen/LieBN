@@ -186,7 +186,7 @@ class SPDLieBatchNormImpl(BaseBatchNorm):
             else:
                 item1 = th.linalg.matrix_norm(tmp)
                 item2 = functionals.trace(tmp)
-                dists = self.alpha * item1 + self.beta * item2.square()
+                dists = self.alpha * item1.square() + self.beta * item2.square()
 
         var = dists.mean(dim=self.batchdim, keepdim=True)
         if self.metric == 'AIM' or self.metric == 'LCM':

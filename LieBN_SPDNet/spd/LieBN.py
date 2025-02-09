@@ -73,7 +73,7 @@ class LieBatchNormSPD(nn.Module):
         else:
             item1 = th.linalg.matrix_norm(X)
             item2 = functional.trace(X)
-            dist = self.alpha * item1 + self.beta * item2.square()
+            dist = self.alpha * item1.square() + self.beta * item2.square()
         return dist
 
     def spd_power(self,X):
