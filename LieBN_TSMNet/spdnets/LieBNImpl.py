@@ -182,7 +182,7 @@ class SPDLieBatchNormImpl(BaseBatchNorm):
         elif self.metric == 'LEM' or self.metric == 'LCM':
             tmp = spd - rm
             if self.beta == 0.:
-                dists = self.alpha * th.linalg.matrix_norm(tmp)
+                dists = self.alpha * th.linalg.matrix_norm(tmp).square()
             else:
                 item1 = th.linalg.matrix_norm(tmp)
                 item2 = functionals.trace(tmp)

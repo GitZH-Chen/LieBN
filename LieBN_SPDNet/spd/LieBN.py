@@ -69,7 +69,7 @@ class LieBatchNormSPD(nn.Module):
     def alpha_beta_dist(self, X):
         """"computing the O(n)-invariant Euclidean distance to the identity (element)"""
         if self.beta==0.:
-            dist = self.alpha * th.linalg.matrix_norm(X)
+            dist = self.alpha * th.linalg.matrix_norm(X).square()
         else:
             item1 = th.linalg.matrix_norm(X)
             item2 = functional.trace(X)
