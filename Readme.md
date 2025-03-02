@@ -5,7 +5,7 @@
 
 # A Lie Group Approach to Riemannian Batch Normalization
 
-**Updates (02/2025):**  We have integrated the LieBN implementations into a  toolbox, now supporting *ine invariant metrics across different matrix manifolds:
+**Updates (02/2025):**  We have integrated the LieBN implementations into a  toolbox, now supporting nine invariant metrics across different matrix manifolds:
 
 - Symmetric Positive Definite (SPD) Manifold: Four distinct metrics, including a newly introduced right-invariant metric.
 - Rotation Group: One bi-invariant metric.

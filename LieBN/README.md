@@ -28,7 +28,7 @@ If you have any problem, please contact me via ziheng_ch@163.com.
 
 ## Implementations
 This source code contains LieBN on the following manifold:
-- SPD manifolds: Log-Euclidean Metric (LEM), Affine-Invariant Metric (AIM), and Log-Cholesky Metric (LCM), and our proposed Cholesky Right Invariant Metric (CRIM);
+- SPD manifolds: Log-Euclidean Metric (LEM), Affine-Invariant Metric (AIM), Log-Cholesky Metric (LCM), and our proposed Cholesky Right Invariant Metric (CRIM);
 - Rotation groups: the canonical bi-invariant metric;
 - Full-rank correlation manifolds: Euclidean-Cholesky Metric (ECM), Log-Euclidean-Cholesky Metric (LECM), Off-Log Metric (OLM), and Log-Scaled Metric (LSM).
 
@@ -47,5 +47,5 @@ This source code contains LieBN on the following manifold:
 Requierments: `torch`, `geoopt`, and `pytorch3d`.
 
 ## Demos
-Demos of LieBN on different geometries can be found `./demos`:
+Demos of LieBN on different geometries can be found in `./demos`:
 
