@@ -9,9 +9,12 @@
     <p align="center"><b>Figure 1:</b> Visualization of LieBN on the SPD, rotation, and correlation manifolds.</p>
 </div>
 
-
 ## Introduction
-This is the official code for our ICLR 2024 publication: *A Lie Group Approach to Riemannian Batch Normalization*. [[OpenReview](https://openreview.net/forum?id=okYdj8Ysru)].
+This is the official implementation for our ICLR 2024 publications: 
+- *A Lie Group Approach to Riemannian Batch Normalization*. 
+[[OpenReview](https://openreview.net/forum?id=okYdj8Ysru)].
+
+- *LieBN: Batch Normalization over Lie Groups* (Conference extension, in submission)
 
 If you find this project helpful, please consider citing us as follows:
 
@@ -27,7 +30,7 @@ If you find this project helpful, please consider citing us as follows:
 If you have any problem, please contact me via ziheng_ch@163.com.
 
 ## Implementations
-This source code contains LieBN on the following manifold:
+This source code contains LieBN on the following manifolds:
 - SPD manifolds: Log-Euclidean Metric (LEM), Affine-Invariant Metric (AIM), Log-Cholesky Metric (LCM), and our proposed Cholesky Right Invariant Metric (CRIM);
 - Rotation groups: the canonical bi-invariant metric;
 - Full-rank correlation manifolds: Euclidean-Cholesky Metric (ECM), Log-Euclidean-Cholesky Metric (LECM), Off-Log Metric (OLM), and Log-Scaled Metric (LSM).
