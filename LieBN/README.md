@@ -11,8 +11,8 @@
 
 ## Introduction
 This is the official implementation for our ICLR 2024 publications: 
-- *A Lie Group Approach to Riemannian Batch Normalization*. 
-[[OpenReview](https://openreview.net/forum?id=okYdj8Ysru)].
+- *A Lie Group Approach to Riemannian Batch Normalization* 
+[[OpenReview](https://openreview.net/forum?id=okYdj8Ysru)]
 
 - *LieBN: Batch Normalization over Lie Groups* (Conference extension, in submission)
 

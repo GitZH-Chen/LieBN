@@ -9,7 +9,7 @@
 
 - Symmetric Positive Definite (SPD) Manifold: Four distinct metrics, including a newly introduced right-invariant metric.
 - Rotation Group: One bi-invariant metric.
-- Full-Rank Correlation Matrices: Four recently developed correlation geometries.
+- Full-Rank Correlation Manifold: Four recently developed correlation geometries.
 
 The complete implementations can be found in the `LieBN` folder. This toolbox is designed to be plug-and-play, making it easy to apply LieBN as a drop-in normalization module across different neural architectures.
 
