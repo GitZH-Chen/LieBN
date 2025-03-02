@@ -5,11 +5,10 @@
 # Lie Group Batch Normalization
 
 <div align="center">
-    <figure>
-        <img src="LieBN_illustration.png" width="800">
-        <figcaption>Figure 1: LieBN on the SPD, rotation, and correlation manifolds.</figcaption>
-    </figure>
+    <img src="LieBN_illustration.png" width="800">
+    <p style="text-align: center;">Figure 1: Visualization of LieBN on the SPD, rotation, and correlation manifolds.</p>
 </div>
+
 
 ## Introduction
 This is the official code for our ICLR 2024 publication: *A Lie Group Approach to Riemannian Batch Normalization*. [[OpenReview](https://openreview.net/forum?id=okYdj8Ysru)].
