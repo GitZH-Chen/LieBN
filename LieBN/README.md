@@ -6,7 +6,7 @@
 
 <div align="center">
     <img src="LieBN_illustration.png" width="800">
-    <p style="text-align: center;">Figure 1: Visualization of LieBN on the SPD, rotation, and correlation manifolds.</p>
+    <p align="center"><b>Figure 1:</b> Visualization of LieBN on the SPD, rotation, and correlation manifolds.</p>
 </div>
 
 
